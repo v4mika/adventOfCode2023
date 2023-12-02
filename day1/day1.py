@@ -13,7 +13,7 @@ def convertLine(line):
             if num in line[i:j]:
                 new_num = nums_dict[num]
                 ret.append(new_num)
-                i = j - 1 # accounts over overlapping words eg "twone"
+                i = j - 1 # accounts for overlapping words eg "twone"
                 break
         if line[j].isdigit():
             new_num = int(line[j])
